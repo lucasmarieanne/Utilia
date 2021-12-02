@@ -1,0 +1,220 @@
+/* Mobile version */
+
+
+/* Navbar */
+@media screen and (max-width: 840px) {
+
+    /* header {
+        bottom: 0;
+        height: 48px;
+        background-color: rgba(0, 0, 0,.5);
+        -webkit-backdrop-filter: saturate(180%) blur(10px);
+        backdrop-filter: blur(10px);
+        justify-content: center;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    } */
+
+    header {
+        justify-content: flex-end;
+    }
+
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .logo {
+        margin-right: auto;
+    }
+
+    nav {
+        position: fixed;
+        top: 0; left: -110%;
+        height: 100%;
+        width: 35rem;
+        background: rgba(255, 242, 227,.5);
+        -webkit-backdrop-filter: saturate(180%) blur(20px);
+        backdrop-filter: saturate(180%) blur(20px);
+        z-index: 10000;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .active {
+        left: 0;
+        box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.5);
+    }
+
+
+
+    .header-button {
+        display: block;
+    }
+    .nav-list,
+    .nav-list-icon {
+        /* display: none; */
+    }
+
+    .nav-list li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0;
+    }
+
+    #nav-close {
+        display: block;
+    }
+
+    #nav-close i {
+        color: black;
+        font-size: 2rem;
+        cursor: pointer;
+        position: absolute;
+        top: 1rem; right: 2rem;
+        /* display: none; */
+    }
+    .nav-list li a {
+        color: black;
+    }
+
+    .nav-list .nav-active {
+        color: #000;
+    }
+
+    .nav-list-icon li {
+        display: inline-block;
+        padding: 0 30px;
+    }
+
+    .nav-list-icon .nav-active {
+        background-color: #fff2e3;
+        border-radius: 20px;
+        padding: 0 20px;
+    }
+
+    .nav-list-icon .nav-active,
+    .nav-list-icon .nav-active i {
+        color: #ff6767;
+        opacity: 1;
+    }
+
+    .nav-list-icon .nav-active,
+    .nav-list-icon .nav-active span {
+        color: #ff6767;
+        font-weight: 900;
+        opacity: 1;
+    }
+
+    .nav-list-icon li a {
+        display: inline-grid;
+        place-items: center;
+        font-size: 25px;
+        text-transform: uppercase;
+        position: relative;
+        opacity: .6;
+        transition: opacity 400ms;
+    }
+
+    .nav-list-icon li a i {
+        color: #fff2e3;
+    }
+
+    .nav-list-icon li span {
+        font-size: 8px;
+        font-weight: 900;
+        color: #fff2e3;
+        position: relative;
+    }
+
+    .nav-list-icon li a:hover {
+        opacity: 1;
+    }
+
+    .scrolling-active {
+        height: 48px;
+        background-color: rgba(0, 0, 0, 0.5);
+        -webkit-backdrop-filter: saturate(180%) blur(20px);
+        backdrop-filter: blur(20px);
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .nav-list-icon li {
+        display: inline-block;
+        padding: 0 20px;
+
+    }
+}
+
+@media screen and (max-width: 440px) {
+
+    .nav-list-icon li {
+        display: inline-block;
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+
+    .nav-list-icon li {
+        display: inline-block;
+        padding: 0 5px;
+    }
+}
+
+/* ------------------------------------------------------- */
+
+/* Text */
+@media screen and (max-width: 880px) {
+
+    .text h1 {
+        font-size: 40px;
+        color: black;
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+    .text h1 {
+        font-size: 30px;
+        color: black;
+    }
+}
+
+@media screen and (max-width: 440px) {
+
+    .text h1 {
+        font-size: 25px;
+        color: black;
+    }
+
+    .text a {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+
+    .article-container p,
+    .article-container2 p {
+        font-size: 40px;
+    }
+}
+
+@keyframes changes {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
