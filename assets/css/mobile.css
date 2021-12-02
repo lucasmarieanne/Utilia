@@ -19,8 +19,16 @@
         justify-content: flex-end;
     }
 
+    .header-button {
+        display: none;
+    }
+
     #menu-btn {
         display: inline-block;
+    }
+
+    .menu-button {
+        cursor: pointer;
     }
 
     .logo {
@@ -45,16 +53,6 @@
     .active {
         left: 0;
         box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.5);
-    }
-
-
-
-    .header-button {
-        display: block;
-    }
-    .nav-list,
-    .nav-list-icon {
-        /* display: none; */
     }
 
     .nav-list li {

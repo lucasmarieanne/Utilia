@@ -78,7 +78,7 @@ li {
     background-repeat: no-repeat;
 }
 
-.back-video {
+/* .back-video {
     position: absolute;
     top: 0;
     left: 0;
@@ -95,7 +95,7 @@ li {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, .5);
-}
+} */
 
 header {
     display: flex;
@@ -117,6 +117,10 @@ footer {
     height: 200px;
     width: 100%;
     background-color: #fff2e3;
+}
+
+.nav-close {
+    display: none;
 }
 
 .copyright {
@@ -297,8 +301,7 @@ footer {
 }
 
 .home a:hover {
-    transform: scale(1.06) rotate(1deg);
-    background-color: rgba(0, 0, 0, .5);
+    transform: scale(1.06);
 }
 
 .text {
